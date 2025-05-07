@@ -1,0 +1,156 @@
+/* 1. Tipografía personalizada de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* 2. Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* 3. Encabezados */
+h1, h2, h3 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+/* 4. Navegación */
+nav {
+  background-color: #004080;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #0066cc;
+}
+
+/* 5. Secciones */
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* 6. Imagen dentro de secciones */
+section img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* 7. Formularios */
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #004080;
+  outline: none;
+}
+
+/* 8. Botones */
+button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0066cc;
+}
+
+/* 9. Flexbox - Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* 10. Responsive - Mobile first */
+img,
+video,
+audio {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  section {
+    max-width: 700px;
+    margin: 40px auto;
+  }
+
+  nav {
+    justify-content: flex-start;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    justify-content: flex-start;
+    padding-left: 40px;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+}
+
+/* 11. Estilos para el formulario de contacto */
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+/* 12. Estilos adicionales para el Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
