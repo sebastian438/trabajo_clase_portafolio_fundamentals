@@ -92,13 +92,6 @@ button:hover {
   background-color: #0066cc;
 }
 
-/* 9. Flexbox - Container */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
 
 /* 10. Responsive - Mobile first */
 img,
@@ -124,10 +117,6 @@ audio {
   nav {
     justify-content: flex-start;
     padding-left: 40px;
-  }
-
-  .container {
-    justify-content: space-between;
   }
 }
 
